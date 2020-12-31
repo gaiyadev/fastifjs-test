@@ -2,7 +2,7 @@ const fastify = require('fastify')({
     logger: true
   })
   
-  fastify.get('/:id', async (request, reply) => {
+  fastify.get('/', async (request, reply) => {
     console.log(request.id)
 
     return { hello: 'world' }
